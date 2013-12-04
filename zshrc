@@ -35,4 +35,4 @@ plugins=(git brew bundler extract heroku osx rails rake ssh-agent)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/mcolyer/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/mcolyer/bin:/Users/mcolyer/bin
+export PATH=/Users/mcolyer/bin:$PATH
