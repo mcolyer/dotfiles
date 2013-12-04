@@ -1,0 +1,8 @@
+set background=dark
+
+colorscheme solarized
+
+set wildignore+=*.jhw-cache/*,*easel-web/public/uploads/*,*easel-web/tmp/cache/*,*node_modules/*
+
+"Highlight the 80th column
+set cc=80

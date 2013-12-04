@@ -1,0 +1,7 @@
+let mapleader = ","
+
+let g:Powerline_symbols = 'fancy'
+let g:Powerline_colorscheme = 'solarized256'
+
+"Map ctrlp to ctrl-t
+let g:ctrlp_map = '<c-t>'
