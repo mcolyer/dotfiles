@@ -1,0 +1,6 @@
+set background=dark
+colorscheme solarized
+
+if has("gui_running")
+    set guioptions=egmrt
+endif
