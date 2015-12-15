@@ -11,6 +11,9 @@ ZSH_THEME="sunrise"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias copy="tmux show-buffer | pbcopy"
+alias grunt="nocorrect grunt"
+alias rspec="nocorrect rspec"
+alias cleardns="sudo discoveryutil udnsflushcache"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -31,6 +34,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git brew bundler extract heroku osx rails rake ssh-agent)
+
+# Re-enable git autocomplet
+fpath=(/opt/boxen/homebrew/share/zsh/site-functions/ $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
