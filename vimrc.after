@@ -6,3 +6,5 @@ set wildignore+=*.jhw-cache/*,*easel-web/public/uploads/*,*easel-web/tmp/cache/*
 
 "Highlight the 80th column
 set cc=80
+
+nmap ,m :NERDTreeFind<CR>
