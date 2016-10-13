@@ -10,3 +10,4 @@ ln -s ~/.dotfiles/vim-plugins ~/.janus
 ln -s ~/.dotfiles/vimrc.after ~/.vimrc.after
 ln -s ~/.dotfiles/vimrc.before ~/.vimrc.before
 ln -s ~/.dotfiles/gemrc ~/.gemrc
+ln -s ~/.dotfiles/tmux-plugins ~/.tmux-plugins
