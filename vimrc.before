@@ -10,3 +10,5 @@ let g:airline_detect_paste=1
 "Map ctrlp to ctrl-t
 let g:ctrlp_map = '<c-t>'
 
+"Open quickfix window after using Ggrep
+autocmd QuickFixCmdPost *grep* cwindow
