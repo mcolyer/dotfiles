@@ -8,3 +8,6 @@ set wildignore+=*.jhw-cache/*,*easel-web/public/uploads/*,*easel-web/tmp/cache/*
 set cc=80
 
 nmap ,m :NERDTreeFind<CR>
+
+"Set gdiff to vertical
+set diffopt+=vertical
