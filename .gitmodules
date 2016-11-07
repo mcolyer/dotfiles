@@ -10,12 +10,12 @@
 [submodule "vim-plugins/vim-airline-themes"]
 	path = vim-plugins/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "vim-plugins/buf-only"]
-	path = vim-plugins/buf-only
-	url = https://github.com/vim-scripts/BufOnly.vim.git
 [submodule "tmux-plugins/tmux-resurrect"]
 	path = tmux-plugins/tmux-resurrect
 	url = https://github.com/tmux-plugins/tmux-resurrect
 [submodule "vim-plugins/vim-obsession"]
 	path = vim-plugins/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
+[submodule "vim-plugins/buf-only"]
+	path = vim-plugins/buf-only
+	url = https://github.com/vim-scripts/BufOnly.vim
