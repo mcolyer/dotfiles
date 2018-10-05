@@ -19,3 +19,6 @@
 [submodule "vim-plugins/buf-only"]
 	path = vim-plugins/buf-only
 	url = https://github.com/vim-scripts/BufOnly.vim
+[submodule "vim-plugins/Align"]
+	path = vim-plugins/Align
+	url = https://github.com/vim-scripts/Align.git
