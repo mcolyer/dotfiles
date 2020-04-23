@@ -12,4 +12,5 @@ ln -s ~/.dotfiles/vimrc.before ~/.vimrc.before
 ln -s ~/.dotfiles/gemrc ~/.gemrc
 ln -s ~/.dotfiles/tmux-plugins ~/.tmux-plugins
 
-ln -s ~/dotfiles/.bash_aliases ~/.bash_aliases
+echo "" >> ~/.bashrc
+echo ". ~/dotfiles/bashprompt.sh" >> ~/.bashrc
