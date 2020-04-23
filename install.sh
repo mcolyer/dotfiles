@@ -14,4 +14,3 @@ ln -s ~/.dotfiles/tmux-plugins ~/.tmux-plugins
 
 echo "" >> ~/.bashrc
 echo ". ~/dotfiles/bashprompt.sh" >> ~/.bashrc
-echo "export $PATH=./node_modules/.bin:$PATH" >> ~/.bashrc
