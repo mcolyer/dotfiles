@@ -4,18 +4,3 @@
 [submodule "vim-plugins/gitgutter"]
 	path = vim-plugins/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "vim-plugins/vim-airline"]
-	path = vim-plugins/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "vim-plugins/vim-airline-themes"]
-	path = vim-plugins/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "tmux-plugins/tmux-resurrect"]
-	path = tmux-plugins/tmux-resurrect
-	url = https://github.com/tmux-plugins/tmux-resurrect
-[submodule "vim-plugins/vim-obsession"]
-	path = vim-plugins/vim-obsession
-	url = https://github.com/tpope/vim-obsession.git
-[submodule "vim-plugins/buf-only"]
-	path = vim-plugins/buf-only
-	url = https://github.com/vim-scripts/BufOnly.vim
