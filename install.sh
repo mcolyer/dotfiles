@@ -4,9 +4,52 @@ set -x
 
 cd ~/
 
-ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-mkdir -p ~/.config/nvim/
-ln -s ~/.dotfiles/init.vim ~/.config/nvim/init.vim
-# Install plugged
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-	       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+if [ ! -f ~/.dotfiles/tmux.conf ]; then
+  ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+fi
+
+if [ ! -f ~/.config/nvim/init.vim ]; then
+  mkdir -p ~/.config/nvim/
+  ln -s ~/.dotfiles/init.vim ~/.config/nvim/init.vim
+fi
+
+if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
+  echo "Installing vim-plug"
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+fi
+
+# detect if EDITOR is set
+if [ -z "$EDITOR" ]; then
+  echo "Setting editor to nvim"
+  set -Ux EDITOR nvim
+fi
+
+if [ ! -f ~/.local/share/devbox/global/current/devbox.lock ]; then
+  echo "Setting up devbox"
+  curl -fsSL https://get.jetpack.io/devbox | bash
+  mkdir -p ~/.local/share/devbox/global/current
+  ln -s ~/.dotfiles/devbox.json ~/.local/share/devbox/global/current/devbox.json
+  ln -s ~/.dotfiles/devbox.lock ~/.local/share/devbox/global/current/devbox.lock
+fi
+
+# determine if current shell is fish
+default_shell=$(getent passwd "$(whoami)" | cut -d: -f7)
+if [ "$default_shell" != "/usr/bin/fish" ]; then
+  echo "Setting up fish"
+  sudo chsh mcolyer -s /usr/bin/fish
+  fish_config prompt save scales
+  devbox completion fish > ~/.config/fish/completions/devbox.fish
+  echo "if status is-interactive
+      # Commands to run in interactive sessions can go here
+     devbox global shellenv | source
+  end" > ~/.config/fish/config.fish
+fi
+
+# detect if git user is set
+if [ -z "$(git config --global user.email)" ]; then
+  echo "Setting up git"
+  git config --global user.email "matt@colyer.name"
+  git config --global user.name "Matt Colyer"
+  git config --global core.editor nvim
+  git config --global default.branch main
+fi
