@@ -1,0 +1,218 @@
+{
+  "lockfile-version": 0,
+  "manifest": {
+    "hook": {},
+    "install": {
+      "curl": {
+        "pkg-path": "curl"
+      },
+      "git": {
+        "pkg-path": "git"
+      },
+      "neovim": {
+        "pkg-path": "neovim"
+      },
+      "tig": {
+        "pkg-path": "tig"
+      },
+      "tmux": {
+        "pkg-path": "tmux"
+      }
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux"
+      ]
+    },
+    "profile": {},
+    "registry": {
+      "defaults": {
+        "subtrees": null
+      },
+      "inputs": {
+        "nixpkgs": {
+          "from": {
+            "owner": "NixOS",
+            "ref": "release-23.11",
+            "repo": "nixpkgs",
+            "type": "github"
+          },
+          "subtrees": [
+            "legacyPackages"
+          ]
+        }
+      },
+      "priority": [
+        "nixpkgs"
+      ]
+    },
+    "vars": {}
+  },
+  "packages": {
+    "x86_64-linux": {
+      "curl": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "curl"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A command line tool for transferring files with URL syntax",
+          "license": "curl",
+          "pname": "curl",
+          "unfree": false,
+          "version": "8.4.0"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "git": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "git"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Distributed version control system",
+          "license": "GPL-2.0",
+          "pname": "git",
+          "unfree": false,
+          "version": "2.42.2"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "neovim": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "neovim"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Vim text editor fork focused on extensibility and agility",
+          "license": null,
+          "pname": "neovim",
+          "unfree": false,
+          "version": "0.9.4"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "tig": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "tig"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Text-mode interface for git",
+          "license": "GPL-2.0-or-later",
+          "pname": "tig",
+          "unfree": false,
+          "version": "2.5.9"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "tmux": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "tmux"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Terminal multiplexer",
+          "license": "BSD-3-Clause",
+          "pname": "tmux",
+          "unfree": false,
+          "version": "3.3a"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      }
+    }
+  },
+  "registry": {
+    "defaults": {
+      "subtrees": null
+    },
+    "inputs": {
+      "nixpkgs": {
+        "from": {
+          "lastModified": 1717428950,
+          "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+          "owner": "NixOS",
+          "repo": "nixpkgs",
+          "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+          "type": "github"
+        },
+        "subtrees": [
+          "legacyPackages"
+        ]
+      }
+    },
+    "priority": [
+      "nixpkgs"
+    ]
+  }
+}
