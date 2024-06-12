@@ -6,6 +6,9 @@
       "curl": {
         "pkg-path": "curl"
       },
+      "direnv": {
+        "pkg-path": "direnv"
+      },
       "git": {
         "pkg-path": "git"
       },
@@ -63,6 +66,34 @@
           "pname": "curl",
           "unfree": false,
           "version": "8.4.0"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "direnv": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "direnv"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A shell extension that manages your environment",
+          "license": "MIT",
+          "pname": "direnv",
+          "unfree": false,
+          "version": "2.32.3"
         },
         "input": {
           "attrs": {
@@ -199,11 +230,11 @@
     "inputs": {
       "nixpkgs": {
         "from": {
-          "lastModified": 1717428950,
-          "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+          "lastModified": 1718186590,
+          "narHash": "sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=",
           "owner": "NixOS",
           "repo": "nixpkgs",
-          "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+          "rev": "47d606d6eb87e13ddde0c0a960143df3160cefb6",
           "type": "github"
         },
         "subtrees": [

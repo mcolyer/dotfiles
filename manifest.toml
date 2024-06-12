@@ -12,6 +12,8 @@ tig.pkg-path = "tig"
 git.pkg-path = "git"
 tmux.pkg-path = "tmux"
 curl.pkg-path = "curl"
+direnv.pkg-path = "direnv"
+where.pkg-path = "where"
 # hello.pkg-path = "hello"
 # nodejs = { version = "^18.4.2", pkg-path = "nodejs_18" }
 
