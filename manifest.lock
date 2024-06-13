@@ -14,12 +14,23 @@
       "neovim": {
         "pkg-path": "neovim"
       },
+      "nodejs_20": {
+        "pkg-path": "nodejs_20"
+      },
       "tig": {
         "pkg-path": "tig"
       },
       "tmux": {
         "pkg-path": "tmux"
+      },
+      "which": {
+        "pkg-path": "which"
       }
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux"
+      ]
     },
     "registry": {
       "defaults": {
@@ -157,6 +168,34 @@
         },
         "priority": 5
       },
+      "nodejs_20": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "nodejs_20"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Event-driven I/O framework for the V8 JavaScript engine",
+          "license": "MIT",
+          "pname": "nodejs",
+          "unfree": false,
+          "version": "20.11.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
       "tig": {
         "attr-path": [
           "legacyPackages",
@@ -198,6 +237,34 @@
           "pname": "tmux",
           "unfree": false,
           "version": "3.3a"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "which": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "which"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Shows the full path of (shell) commands",
+          "license": "GPL-3.0-or-later",
+          "pname": "which",
+          "unfree": false,
+          "version": "2.21"
         },
         "input": {
           "attrs": {
