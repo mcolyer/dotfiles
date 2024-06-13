@@ -1,7 +1,6 @@
 {
   "lockfile-version": 0,
   "manifest": {
-    "hook": {},
     "install": {
       "curl": {
         "pkg-path": "curl"
@@ -22,12 +21,6 @@
         "pkg-path": "tmux"
       }
     },
-    "options": {
-      "systems": [
-        "x86_64-linux"
-      ]
-    },
-    "profile": {},
     "registry": {
       "defaults": {
         "subtrees": null
@@ -48,8 +41,7 @@
       "priority": [
         "nixpkgs"
       ]
-    },
-    "vars": {}
+    }
   },
   "packages": {
     "x86_64-linux": {

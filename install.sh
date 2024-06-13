@@ -24,24 +24,23 @@ if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
   sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 fi
 
-# detect if EDITOR is set
-#if [ -z "$EDITOR" ]; then
-#  echo "Setting editor to nvim"
-#  set -Ux EDITOR nvim
-#fi
-
 # determine if current shell is fish
-#default_shell=$(getent passwd "$(whoami)" | cut -d: -f7)
-#if [ "$default_shell" != "/usr/bin/fish" ]; then
-#  echo "Setting up fish"
-#  sudo chsh mcolyer -s /usr/bin/fish
-#  fish_config prompt save scales
-#  devbox completion fish > ~/.config/fish/completions/devbox.fish
-#  echo "if status is-interactive
-#      # Commands to run in interactive sessions can go here
-#     devbox global shellenv | source
-#  end" > ~/.config/fish/config.fish
-#fi
+default_shell=$(getent passwd "$(whoami)" | cut -d: -f7)
+if [ "$default_shell" != "/usr/bin/fish" ]; then
+  echo "Setting up fish"
+  sudo chsh mcolyer -s /usr/bin/fish
+  fish_config prompt save scales
+  echo "if status is-interactive
+     eval "\$(flox activate --dir ~)"
+  end" > ~/.config/fish/config.fish
+fi
+
+# detect if EDITOR is set
+if [ -z "$EDITOR" ]; then
+  echo "Setting editor to nvim"
+  # You can't use set -Ux within a script apparently
+  #set -Ux EDITOR nvim
+fi
 
 # detect if git user is set
 if [ -z "$(git config --global user.email)" ]; then
@@ -49,5 +48,5 @@ if [ -z "$(git config --global user.email)" ]; then
   git config --global user.email "matt@colyer.name"
   git config --global user.name "Matt Colyer"
   git config --global core.editor nvim
-  git config --global default.branch main
+  git config --global init.defaultBranch main
 fi
