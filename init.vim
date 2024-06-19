@@ -40,6 +40,7 @@ Plug('sbdchd/neoformat')
 Plug('github/copilot.vim')
 
 Plug('altercation/vim-colors-solarized')
+Plug('wincent/vim-clipper')
 vim.call('plug#end')
 
 require("lspsaga").setup({})
@@ -274,3 +275,6 @@ colorscheme solarized
 " Make the bar not grey
 highlight! link SignColumn LineNr
 autocmd ColorScheme * highlight! link SignColumn LineNr
+
+" Add clipper support
+call clipper#set_invocation('nc -q 0 localhost 8377')
