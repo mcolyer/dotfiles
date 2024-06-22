@@ -7,6 +7,7 @@ curl.pkg-path = "curl"
 direnv.pkg-path = "direnv"
 which.pkg-path = "which"
 nodejs_20.pkg-path = "nodejs_20"
+ripgrep.pkg-path = "ripgrep"
 
 [options]
 systems = ["x86_64-linux"]

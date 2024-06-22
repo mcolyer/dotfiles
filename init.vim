@@ -29,7 +29,7 @@ Plug('vim-scripts/BufClose.vim')
 Plug('lewis6991/gitsigns.nvim')
 
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim', { tag = '0.1.1' })
+Plug('nvim-telescope/telescope.nvim')
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
 
 Plug('vim-airline/vim-airline')

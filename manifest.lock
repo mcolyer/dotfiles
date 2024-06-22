@@ -17,6 +17,9 @@
       "nodejs_20": {
         "pkg-path": "nodejs_20"
       },
+      "ripgrep": {
+        "pkg-path": "ripgrep"
+      },
       "tig": {
         "pkg-path": "tig"
       },
@@ -181,6 +184,34 @@
           "pname": "nodejs",
           "unfree": false,
           "version": "20.11.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1717428950,
+            "narHash": "sha256-Pr3lhu2No1GHJarhjt+Jsfxye1wNLoY12E44p0b3VO0=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "4fad892a8f64635a55423e4acfefeefb6caf4d0d",
+            "type": "github"
+          },
+          "fingerprint": "be3735e473216d47b786d80521592c313517b6a43d0da6043acd396f5d17a541",
+          "url": "github:NixOS/nixpkgs/4fad892a8f64635a55423e4acfefeefb6caf4d0d"
+        },
+        "priority": 5
+      },
+      "ripgrep": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "ripgrep"
+        ],
+        "info": {
+          "broken": false,
+          "description": "A utility that combines the usability of The Silver Searcher with the raw speed of grep",
+          "license": null,
+          "pname": "ripgrep",
+          "unfree": false,
+          "version": "13.0.0"
         },
         "input": {
           "attrs": {
