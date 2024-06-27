@@ -1,3 +1,4 @@
+version = 1
 [install]
 neovim.pkg-path = "neovim"
 tig.pkg-path = "tig"

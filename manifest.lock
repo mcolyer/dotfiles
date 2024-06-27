@@ -1,1 +1,369 @@
-{"lockfile-version":0,"manifest":{"install":{"curl":{"pkg-path":"curl"},"direnv":{"pkg-path":"direnv"},"git":{"pkg-path":"git"},"neovim":{"pkg-path":"neovim"},"nodejs_20":{"pkg-path":"nodejs_20"},"ripgrep":{"pkg-path":"ripgrep"},"tig":{"pkg-path":"tig"},"tmux":{"pkg-path":"tmux"},"which":{"pkg-path":"which"}},"options":{"systems":["x86_64-linux"]},"registry":{"defaults":{"subtrees":null},"inputs":{"nixpkgs":{"from":{"owner":"NixOS","ref":"release-23.11","repo":"nixpkgs","type":"github"},"subtrees":["legacyPackages"]}},"priority":["nixpkgs"]}},"packages":{"x86_64-linux":{"curl":{"attr-path":["legacyPackages","x86_64-linux","curl"],"info":{"broken":false,"description":"A command line tool for transferring files with URL syntax","license":"curl","pname":"curl","unfree":false,"version":"8.4.0"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"direnv":{"attr-path":["legacyPackages","x86_64-linux","direnv"],"info":{"broken":false,"description":"A shell extension that manages your environment","license":"MIT","pname":"direnv","unfree":false,"version":"2.32.3"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"git":{"attr-path":["legacyPackages","x86_64-linux","git"],"info":{"broken":false,"description":"Distributed version control system","license":"GPL-2.0","pname":"git","unfree":false,"version":"2.42.2"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"neovim":{"attr-path":["legacyPackages","x86_64-linux","neovim"],"info":{"broken":false,"description":"Vim text editor fork focused on extensibility and agility","license":null,"pname":"neovim","unfree":false,"version":"0.9.4"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"nodejs_20":{"attr-path":["legacyPackages","x86_64-linux","nodejs_20"],"info":{"broken":false,"description":"Event-driven I/O framework for the V8 JavaScript engine","license":"MIT","pname":"nodejs","unfree":false,"version":"20.11.1"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"ripgrep":{"attr-path":["legacyPackages","x86_64-linux","ripgrep"],"info":{"broken":false,"description":"A utility that combines the usability of The Silver Searcher with the raw speed of grep","license":null,"pname":"ripgrep","unfree":false,"version":"13.0.0"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"tig":{"attr-path":["legacyPackages","x86_64-linux","tig"],"info":{"broken":false,"description":"Text-mode interface for git","license":"GPL-2.0-or-later","pname":"tig","unfree":false,"version":"2.5.9"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"tmux":{"attr-path":["legacyPackages","x86_64-linux","tmux"],"info":{"broken":false,"description":"Terminal multiplexer","license":"BSD-3-Clause","pname":"tmux","unfree":false,"version":"3.3a"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5},"which":{"attr-path":["legacyPackages","x86_64-linux","which"],"info":{"broken":false,"description":"Shows the full path of (shell) commands","license":"GPL-3.0-or-later","pname":"which","unfree":false,"version":"2.21"},"input":{"attrs":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"fingerprint":"c15b3df5ae40eb585001c55eedd7811a595ef4924a3d728f92542dbbffd0dcaf","url":"github:NixOS/nixpkgs/47d606d6eb87e13ddde0c0a960143df3160cefb6"},"priority":5}}},"registry":{"defaults":{"subtrees":null},"inputs":{"nixpkgs":{"from":{"lastModified":1718186590,"narHash":"sha256-BEivyPf/ITtZa0ywnpTIEg5Ja7ZuOVHieRpL5diQQCc=","owner":"NixOS","repo":"nixpkgs","rev":"47d606d6eb87e13ddde0c0a960143df3160cefb6","type":"github"},"subtrees":["legacyPackages"]}},"priority":["nixpkgs"]}}
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "curl": {
+        "pkg-path": "curl",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "direnv": {
+        "pkg-path": "direnv",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "git": {
+        "pkg-path": "git",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "neovim": {
+        "pkg-path": "neovim",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "nodejs_20": {
+        "pkg-path": "nodejs_20",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "ripgrep": {
+        "pkg-path": "ripgrep",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "tig": {
+        "pkg-path": "tig",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "tmux": {
+        "pkg-path": "tmux",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      },
+      "which": {
+        "pkg-path": "which",
+        "pkg-group": null,
+        "priority": null,
+        "version": null,
+        "systems": null
+      }
+    },
+    "vars": {},
+    "hook": {
+      "on-activate": null
+    },
+    "profile": {
+      "common": null,
+      "bash": null,
+      "zsh": null,
+      "fish": null,
+      "tcsh": null
+    },
+    "options": {
+      "systems": [
+        "x86_64-linux"
+      ],
+      "allow": {
+        "unfree": null,
+        "broken": null,
+        "licenses": []
+      },
+      "semver": {
+        "allow-pre-releases": null
+      }
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "curl",
+      "broken": false,
+      "derivation": "/nix/store/lns7s1wv1bsn3a7i7vjylq4yv9wslrld-curl-8.7.1.drv",
+      "description": "A command line tool for transferring files with URL syntax",
+      "install_id": "curl",
+      "license": "curl",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "curl-8.7.1",
+      "pname": "curl",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "8.7.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/5xsp4qyik2wra2blp5am49yp7yp7wi6q-curl-8.7.1-bin",
+        "debug": "/nix/store/bpi7xm7h17asvnl0bd93hxzz9dhizdjx-curl-8.7.1-debug",
+        "dev": "/nix/store/jvg1wiw83sxhx7bmhwyqhw9ygags4gwq-curl-8.7.1-dev",
+        "devdoc": "/nix/store/ldzwhbq44wpqkjkfhy5gxfyy45v5g68j-curl-8.7.1-devdoc",
+        "man": "/nix/store/0xpamghwbc3fzw5220mdv78sdm7gajlv-curl-8.7.1-man",
+        "out": "/nix/store/36kr91f8s509z2r8hqvpayw5bqyqgyzr-curl-8.7.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "direnv",
+      "broken": false,
+      "derivation": "/nix/store/41mz43zjj0v0hhq4lyvbslqj3cgfr1kn-direnv-2.34.0.drv",
+      "description": "A shell extension that manages your environment",
+      "install_id": "direnv",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "direnv-2.34.0",
+      "pname": "direnv",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.34.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/35klgzald67mkslqb9kkv01gn98zfbza-direnv-2.34.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/3ppsg6fsavzkzjiq84p9fcjpczgfzmav-git-2.44.1.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "git-2.44.1",
+      "pname": "git",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.44.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/93xf345jmvrcz1wc3va981rp13rn4hyz-git-2.44.1-debug",
+        "doc": "/nix/store/rvgnmd4cwvmy3v77ig977ix40d2mipri-git-2.44.1-doc",
+        "out": "/nix/store/jxjzgz1p0hdqsg8k17ivw5mgcd6ffx9c-git-2.44.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "neovim",
+      "broken": false,
+      "derivation": "/nix/store/9q59jsycycnds53xl87jlws8r6haqhi1-neovim-0.10.0.drv",
+      "description": "Vim text editor fork focused on extensibility and agility",
+      "install_id": "neovim",
+      "license": "[ Apache-2.0, Vim ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "neovim-0.10.0",
+      "pname": "neovim",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/m9nqvj3xqqrzanpg9g2awkh8rc987qq6-neovim-0.10.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs_20",
+      "broken": false,
+      "derivation": "/nix/store/fv7ny9w4bb7cnafh86zbz9sxb99nqqpc-nodejs-20.12.2.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs_20",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "nodejs-20.12.2",
+      "pname": "nodejs_20",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "nodejs-20.12.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/s7b0dqga0311mvq48mirnlm0p3dr4gm3-nodejs-20.12.2-libv8",
+        "out": "/nix/store/6g9n96qf1yx139xklnmy3v4xhjvjgsji-nodejs-20.12.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ripgrep",
+      "broken": false,
+      "derivation": "/nix/store/4pnhl08rvbcgk6dkjdg53f2l8p76nvh1-ripgrep-14.1.0.drv",
+      "description": "A utility that combines the usability of The Silver Searcher with the raw speed of grep",
+      "install_id": "ripgrep",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "ripgrep-14.1.0",
+      "pname": "ripgrep",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.1.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cn26v027m7mwl785f03wlvraqrm7dilw-ripgrep-14.1.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tig",
+      "broken": false,
+      "derivation": "/nix/store/gd3mybvhriz476r2gx50k0kpjwx1q0mh-tig-2.5.10.drv",
+      "description": "Text-mode interface for git",
+      "install_id": "tig",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "tig-2.5.10",
+      "pname": "tig",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.5.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4q9s1aikhv9300bq0clskbafw1fs953r-tig-2.5.10"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tmux",
+      "broken": false,
+      "derivation": "/nix/store/sx8gm46pgl9vby44i024h7hck7f53d4g-tmux-3.4.drv",
+      "description": "Terminal multiplexer",
+      "install_id": "tmux",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "tmux-3.4",
+      "pname": "tmux",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/0vb8ywcwpgiavqrl80n44w64wn3jjam6-tmux-3.4-man",
+        "out": "/nix/store/dxy57vc4sbk1zb8r57firz1sad7cz1vn-tmux-3.4"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "which",
+      "broken": false,
+      "derivation": "/nix/store/az5dzad4dfxd3p5cc65pkcjb7l6473a2-which-2.21.drv",
+      "description": "Shows the full path of (shell) commands",
+      "install_id": "which",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "name": "which-2.21",
+      "pname": "which",
+      "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+      "rev_count": 633517,
+      "rev_date": "2024-05-31T23:09:26Z",
+      "scrape_date": "2024-06-04T09:46:16Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.21",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ln1ja3px23h21r64fw554h8a6227j9w3-which-2.21"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
