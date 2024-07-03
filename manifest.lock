@@ -28,7 +28,7 @@
         "pkg-path": "neovim",
         "pkg-group": null,
         "priority": null,
-        "version": null,
+        "version": "0.10.0",
         "systems": null
       },
       "nodejs_20": {

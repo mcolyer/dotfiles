@@ -4,6 +4,9 @@ set -x
 
 cd ~/
 
+wget -O https://downloads.flox.dev/by-env/stable/deb/flox-1.1.0.x86_64-linux.deb
+dpkg -i flox-1.1.0.x86_64-linux.deb
+
 if [ ! -f ~/.tmux.conf ]; then
   ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 fi
@@ -31,7 +34,7 @@ if [ "$default_shell" != "/usr/bin/fish" ]; then
   sudo chsh mcolyer -s /usr/bin/fish
   fish_config prompt save scales
   echo "if status is-interactive
-     eval "\$(flox activate --dir ~)"
+     #eval "\$(flox activate --dir ~)"
   end" > ~/.config/fish/config.fish
 fi
 
