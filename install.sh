@@ -7,7 +7,7 @@ cd ~/
 if [ ! -f flox-1.1.0.x86_64-linux.deb ]; then
   echo "Downloading flox"
   wget -O flox-1.1.0.x86_64-linux.deb https://downloads.flox.dev/by-env/stable/deb/flox-1.1.0.x86_64-linux.deb
-  dpkg -i flox-1.1.0.x86_64-linux.deb
+  sudo dpkg -i flox-1.1.0.x86_64-linux.deb
 fi
 
 if [ ! -f ~/.tmux.conf ]; then
@@ -18,6 +18,7 @@ if [ ! -d ~/.flox ]; then
   mkdir -p ~/.flox/env/
   ln -s ~/.dotfiles/manifest.toml ~/.flox/env/
   ln -s ~/.dotfiles/manifest.lock ~/.flox/env/
+  ln -s ~/.dotfiles/env.json ~/.flox/
 fi
 
 if [ ! -f ~/.config/nvim/init.vim ]; then

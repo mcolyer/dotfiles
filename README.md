@@ -1,7 +1,7 @@
 # General Configuration
 
 ```
-apt install fish tig
+apt install fish
 ./install.sh
 ```
 
