@@ -4,8 +4,11 @@ set -x
 
 cd ~/
 
-wget -O https://downloads.flox.dev/by-env/stable/deb/flox-1.1.0.x86_64-linux.deb
-dpkg -i flox-1.1.0.x86_64-linux.deb
+if [ ! -f flox-1.1.0.x86_64-linux.deb ]; then
+  echo "Downloading flox"
+  wget -O flox-1.1.0.x86_64-linux.deb https://downloads.flox.dev/by-env/stable/deb/flox-1.1.0.x86_64-linux.deb
+  dpkg -i flox-1.1.0.x86_64-linux.deb
+fi
 
 if [ ! -f ~/.tmux.conf ]; then
   ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
@@ -32,17 +35,16 @@ default_shell=$(getent passwd "$(whoami)" | cut -d: -f7)
 if [ "$default_shell" != "/usr/bin/fish" ]; then
   echo "Setting up fish"
   sudo chsh mcolyer -s /usr/bin/fish
-  fish_config prompt save scales
+  /usr/bin/fish -c "fish_config prompt save scales"
   echo "if status is-interactive
-     #eval "\$(flox activate --dir ~)"
+     eval "\$\(flox activate --dir ~\)"
   end" > ~/.config/fish/config.fish
 fi
 
 # detect if EDITOR is set
 if [ -z "$EDITOR" ]; then
   echo "Setting editor to nvim"
-  # You can't use set -Ux within a script apparently
-  #set -Ux EDITOR nvim
+  /usr/bin/fish -c "set -Ux EDITOR nvim"
 fi
 
 # detect if git user is set
