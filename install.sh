@@ -4,10 +4,10 @@ set -x
 
 cd ~/
 
-if [ ! -f flox-1.1.0.x86_64-linux.deb ]; then
+if [ ! -f flox-1.2.0.x86_64-linux.deb ]; then
   echo "Downloading flox"
-  wget -O flox-1.1.0.x86_64-linux.deb https://downloads.flox.dev/by-env/stable/deb/flox-1.1.0.x86_64-linux.deb
-  sudo dpkg -i flox-1.1.0.x86_64-linux.deb
+  wget -O flox-1.2.0.x86_64-linux.deb https://downloads.flox.dev/by-env/stable/deb/flox-1.2.0.x86_64-linux.deb
+  sudo dpkg -i flox-1.2.0.x86_64-linux.deb
 fi
 
 if [ ! -f ~/.tmux.conf ]; then
