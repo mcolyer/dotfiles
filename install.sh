@@ -37,7 +37,7 @@ if [ "$default_shell" != "/usr/bin/fish" ]; then
   echo "Setting up fish"
   sudo chsh mcolyer -s /usr/bin/fish
   /usr/bin/fish -c "fish_config prompt save scales"
-  echo "if status is-interactive
+  echo "if status is-login
      eval "\$\(flox activate --dir ~\)"
   end" > ~/.config/fish/config.fish
 fi
