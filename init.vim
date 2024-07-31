@@ -226,7 +226,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap tt :Trouble qflist toggle<CR>
+nnoremap tt :Trouble diagnostics toggle<CR>
 
 "Gitgutter
 set ut=200
