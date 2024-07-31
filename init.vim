@@ -42,8 +42,11 @@ Plug('github/copilot.vim')
 Plug('altercation/vim-colors-solarized')
 Plug('wincent/vim-clipper')
 vim.call('plug#end')
-
+-- LSP Saga
 require("lspsaga").setup({})
+
+-- Trouble
+require("trouble").setup({})
 
 -- Git signs
 require('gitsigns').setup()
@@ -223,7 +226,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap tt :TroubleToggle<CR>
+nnoremap tt :Trouble qflist toggle<CR>
 
 "Gitgutter
 set ut=200
