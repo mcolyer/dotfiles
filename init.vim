@@ -225,10 +225,6 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap tt :TroubleToggle<CR>
 
-"deoplete
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
 "Gitgutter
 set ut=200
 "highlight GitGutterChange guifg=#bbbb00 ctermfg=3
