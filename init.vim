@@ -38,6 +38,7 @@ Plug('vim-airline/vim-airline-themes')
 Plug('sbdchd/neoformat')
 
 Plug('github/copilot.vim')
+Plug('CopilotC-Nvim/CopilotChat.nvim', { ['branch'] =  'canary' })
 
 Plug('altercation/vim-colors-solarized')
 Plug('wincent/vim-clipper')
@@ -84,6 +85,9 @@ lspconfig.pylsp.setup {
       }
     }
   }
+
+-- Copilot
+require("CopilotChat").setup()
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
