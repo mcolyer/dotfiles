@@ -1,0 +1,15 @@
+version = 1
+[install]
+tig.pkg-path = "tig"
+git.pkg-path = "git"
+tmux.pkg-path = "tmux"
+curl.pkg-path = "curl"
+direnv.pkg-path = "direnv"
+which.pkg-path = "which"
+nodejs_20.pkg-path = "nodejs_20"
+ripgrep.pkg-path = "ripgrep"
+neovim.pkg-path = "neovim"
+neovim.version = "0.10.0"
+
+[options]
+systems = ["x86_64-linux"]

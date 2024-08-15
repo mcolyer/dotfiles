@@ -29,7 +29,7 @@ Plug('vim-scripts/BufClose.vim')
 Plug('lewis6991/gitsigns.nvim')
 
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim', { tag = '0.1.1' })
+Plug('nvim-telescope/telescope.nvim')
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
 
 Plug('vim-airline/vim-airline')
@@ -38,11 +38,16 @@ Plug('vim-airline/vim-airline-themes')
 Plug('sbdchd/neoformat')
 
 Plug('github/copilot.vim')
+Plug('CopilotC-Nvim/CopilotChat.nvim', { ['branch'] =  'canary' })
 
 Plug('altercation/vim-colors-solarized')
+Plug('wincent/vim-clipper')
 vim.call('plug#end')
-
+-- LSP Saga
 require("lspsaga").setup({})
+
+-- Trouble
+require("trouble").setup({})
 
 -- Git signs
 require('gitsigns').setup()
@@ -80,6 +85,17 @@ lspconfig.pylsp.setup {
       }
     }
   }
+
+-- Copilot
+require("CopilotChat").setup()
+
+function CopilotPromptActions()
+  local actions = require("CopilotChat.actions")
+  require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
+end
+
+vim.api.nvim_set_keymap('n', '<leader>ccp', ':lua CopilotPromptActions()<CR>', { noremap = true, silent = true })
+
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -222,11 +238,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap tt :TroubleToggle<CR>
-
-"deoplete
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+nnoremap tt :Trouble diagnostics toggle<CR>
 
 "Gitgutter
 set ut=200
@@ -247,7 +259,7 @@ let g:airline_solarized_bg='dark'
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
 
-"Neoformat
+" Neoformat
 
 " Autosave
 augroup fmt
@@ -274,3 +286,6 @@ colorscheme solarized
 " Make the bar not grey
 highlight! link SignColumn LineNr
 autocmd ColorScheme * highlight! link SignColumn LineNr
+
+" Add clipper support
+call clipper#set_invocation('nc -q 0 localhost 8377')
