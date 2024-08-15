@@ -89,6 +89,14 @@ lspconfig.pylsp.setup {
 -- Copilot
 require("CopilotChat").setup()
 
+function CopilotPromptActions()
+  local actions = require("CopilotChat.actions")
+  require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
+end
+
+vim.api.nvim_set_keymap('n', '<leader>ccp', ':lua CopilotPromptActions()<CR>', { noremap = true, silent = true })
+
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
@@ -251,7 +259,7 @@ let g:airline_solarized_bg='dark'
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
 
-"Neoformat
+" Neoformat
 
 " Autosave
 augroup fmt
