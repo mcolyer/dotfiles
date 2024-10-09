@@ -21,15 +21,13 @@ Plug('glepnir/lspsaga.nvim')
 Plug('folke/trouble.nvim')
 Plug('nvim-tree/nvim-web-devicons')
 
-Plug('neomake/neomake')
-
 Plug('preservim/nerdtree')
 Plug('jeetsukumaran/vim-buffergator')
 Plug('vim-scripts/BufClose.vim')
 Plug('lewis6991/gitsigns.nvim')
 
 Plug('nvim-lua/plenary.nvim')
-Plug('nvim-telescope/telescope.nvim', { tag = '0.1.1' })
+Plug('nvim-telescope/telescope.nvim', { tag = '0.1.8' })
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
 
 Plug('vim-airline/vim-airline')
@@ -37,12 +35,43 @@ Plug('vim-airline/vim-airline-themes')
 
 Plug('sbdchd/neoformat')
 
-Plug('github/copilot.vim')
+-- Avante
+Plug('stevearc/dressing.nvim')
+Plug('nvim-lua/plenary.nvim')
+Plug('MunifTanjim/nui.nvim')
+Plug('HakonHarnes/img-clip.nvim')
+Plug('zbirenbaum/copilot.lua')
+Plug('yetone/avante.nvim', { ['branch'] = 'main', ['do'] = 'make' })
 
 Plug('altercation/vim-colors-solarized')
 vim.call('plug#end')
 
+-- Copilot
+require("copilot").setup({
+  suggestion = { 
+    enabled = true,
+    auto_trigger = true,
+    keymap = {
+      accept = "<S-Tab>",
+      accept_word = false,
+      accept_line = false,
+      next = "<C-]>",
+      prev = "<C-[>",
+      dismiss = "<Esc>",
+    },
+  },
+  panel = { enabled = false },
+})
+
+require("avante").setup()
+require("avante_lib").load()
+vim.opt.laststatus = 3
+
+-- LSPSaga
 require("lspsaga").setup({})
+
+-- Trouble
+require("trouble").setup({})
 
 -- Git signs
 require('gitsigns').setup()
@@ -212,8 +241,9 @@ keymap({"n", "t"}, "<A-d>", "<cmd>Lspsaga term_toggle<CR>")
 EOF
 
 "Neomake
-call neomake#configure#automake('rw', 1000)
-let g:neomake_python_enabled_makers = [] " Disable for now as we use the Black formatter
+"call neomake#configure#automake('rw', 1000)
+"let g:neomake_python_enabled_makers = [] " Disable for now as we use the Black formatter
+"let g:neomake_ruby_enabled_makers = [] " Disable for now as we use the Black formatter
 
 " Keybindings
 nnoremap <C-t> <cmd>Telescope git_files<cr>
@@ -248,15 +278,19 @@ let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
 
 "Neoformat
+let g:neoformat_only_msg_on_error = 1
 
 " Autosave
 augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
+   autocmd!
+   autocmd BufWritePre * undojoin | Neoformat
 augroup END
 
 " Force the use of the black formatter
 let g:neoformat_enabled_python = ['black']
+
+" Disable yaml
+let g:neoformat_enabled_yaml = []
 
 " Enable alignment
 let g:neoformat_basic_format_align = 0
