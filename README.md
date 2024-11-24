@@ -12,6 +12,9 @@ apt install fish
 :Copilot
 ```
 
+## SSH
+Make sure to copy over any public versions of private keys we want to select.
+
 ## EC2
 
 In order to get a hibernatable EC2 instance, you need to install the following packages:
