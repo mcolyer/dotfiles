@@ -10,6 +10,11 @@ nodejs_20.pkg-path = "nodejs_20"
 ripgrep.pkg-path = "ripgrep"
 neovim.pkg-path = "neovim"
 neovim.version = "0.10.0"
+aider-chat.pkg-path = "aider-chat"
+aider-chat.pkg-group = "aider-chat"
+uv.pkg-path = "uv"
+uv.version = "0.4.30"
+uv.pkg-group = "uv"
 
 [options]
 systems = ["x86_64-linux"]
