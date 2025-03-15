@@ -5,7 +5,8 @@
     "install": {
       "aider-chat": {
         "pkg-path": "aider-chat",
-        "pkg-group": "aider-chat"
+        "pkg-group": "aider-chat",
+        "version": "0.74.1"
       },
       "curl": {
         "pkg-path": "curl"
@@ -18,7 +19,7 @@
       },
       "neovim": {
         "pkg-path": "neovim",
-        "version": "0.10.0"
+        "version": "0.10.4"
       },
       "nodejs_20": {
         "pkg-path": "nodejs_20"
@@ -35,7 +36,7 @@
       "uv": {
         "pkg-path": "uv",
         "pkg-group": "uv",
-        "version": "0.4.30"
+        "version": "0.6.0"
       },
       "which": {
         "pkg-path": "which"
@@ -57,28 +58,28 @@
     {
       "attr_path": "aider-chat",
       "broken": false,
-      "derivation": "/nix/store/1k5w8y60xkqswhqpnphk1i561y95fmba-aider-chat-0.62.0.drv",
+      "derivation": "/nix/store/7ysw82qyk8gzray8mfc9nkvqjbkkqmk4-python3.12-aider-chat-0.74.1.drv",
       "description": "AI pair programming in your terminal",
       "install_id": "aider-chat",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4633a7c72337ea8fd23a4f2ba3972865e3ec685d",
-      "name": "aider-chat-0.62.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "name": "aider-chat-0.74.1",
       "pname": "aider-chat",
-      "rev": "4633a7c72337ea8fd23a4f2ba3972865e3ec685d",
-      "rev_count": 712559,
-      "rev_date": "2024-11-25T07:53:41Z",
-      "scrape_date": "2024-11-27T03:52:37Z",
+      "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+      "rev_count": 762036,
+      "rev_date": "2025-03-03T13:57:36Z",
+      "scrape_date": "2025-03-04T00:30:58Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.62.0",
+      "version": "0.74.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/mr4g1n1aahvy2qj5pxqca64rdzbxdzlj-aider-chat-0.62.0-dist",
-        "out": "/nix/store/g74y2z8d72f1ibp7xfwfp190hlc0jx70-aider-chat-0.62.0"
+        "dist": "/nix/store/55ihyhxfkc25n1alyhwxwdvvzw98c3ww-python3.12-aider-chat-0.74.1-dist",
+        "out": "/nix/store/4362qixsavx758phpa7jnh69v8npiif8-python3.12-aider-chat-0.74.1"
       },
       "system": "x86_64-linux",
       "group": "aider-chat",
@@ -87,35 +88,34 @@
     {
       "attr_path": "curl",
       "broken": false,
-      "derivation": "/nix/store/fb1ym869iq17y527l90qyg7n573hiacr-curl-8.8.0.drv",
+      "derivation": "/nix/store/258sxbzbxpgzgvy6pbr30akcx5l9m49i-curl-8.12.1.drv",
       "description": "Command line tool for transferring files with URL syntax",
       "install_id": "curl",
       "license": "curl",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "curl-8.8.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "curl-8.12.1",
       "pname": "curl",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "8.8.0",
+      "version": "8.12.1",
       "outputs_to_install": [
         "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/did64gsb4sn6xvylw6cswa7697avdrsb-curl-8.8.0-bin",
-        "debug": "/nix/store/9nqslsdd8r8wxhmgw8yl6l1qc2v009pp-curl-8.8.0-debug",
-        "dev": "/nix/store/x7s28vblgi5xwzgxfh5sll9f28hdgi48-curl-8.8.0-dev",
-        "devdoc": "/nix/store/2bjzhf7skvllpb2n6cbqnhcchbqnmzab-curl-8.8.0-devdoc",
-        "man": "/nix/store/aqbglj841rmaxk8ngbf5wilakwqw2wyb-curl-8.8.0-man",
-        "out": "/nix/store/nbnlwb2crbbg9kwchflrwap6w7icf3ah-curl-8.8.0"
+        "bin": "/nix/store/ipyzblpplw889rdvmm7sw8r3kf24p6c2-curl-8.12.1-bin",
+        "debug": "/nix/store/c8dh5156hf1ikfnhihiiv97bj67fzkh0-curl-8.12.1-debug",
+        "dev": "/nix/store/adpdg2yhykxgm13r8nj9xqbj676vxv3n-curl-8.12.1-dev",
+        "devdoc": "/nix/store/m1kmbias4l6g6w5jifc0q1wc2sn7hj7c-curl-8.12.1-devdoc",
+        "man": "/nix/store/kf2jk2p8bf3lvasxy5pmib6irgs28rl2-curl-8.12.1-man",
+        "out": "/nix/store/xbxq9d2npfdb6954wdc5aa7skf2bpdxs-curl-8.12.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -124,29 +124,28 @@
     {
       "attr_path": "direnv",
       "broken": false,
-      "derivation": "/nix/store/hfh8ndl237pl1lldmizdnk0v6pn9mgbx-direnv-2.34.0.drv",
+      "derivation": "/nix/store/dfn1c85pf0g78k87ac1dz0pk1i0wyymv-direnv-2.35.0.drv",
       "description": "Shell extension that manages your environment",
       "install_id": "direnv",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "direnv-2.34.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "direnv-2.35.0",
       "pname": "direnv",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "2.34.0",
+      "version": "2.35.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/8l9j9kdv9m0z0s30lp4yvrc9s5bcbgmx-direnv-2.34.0"
+        "out": "/nix/store/iy47slqbd810jhczw3sd9d192sngxsz4-direnv-2.35.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -155,31 +154,30 @@
     {
       "attr_path": "git",
       "broken": false,
-      "derivation": "/nix/store/bp1fc3bgyrazrn4lh9d6mf55lyy7mh40-git-2.45.2.drv",
+      "derivation": "/nix/store/c33kc0kbjbmr88l57sni11zgx6cjz01w-git-2.48.1.drv",
       "description": "Distributed version control system",
       "install_id": "git",
       "license": "GPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "git-2.45.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "git-2.48.1",
       "pname": "git",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "2.45.2",
+      "version": "2.48.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "debug": "/nix/store/sir55fajrmsv6zwjx31rip93yz1x0mjy-git-2.45.2-debug",
-        "doc": "/nix/store/iw4nz88jqklmjz5wr8dzxwdlswhr2rgi-git-2.45.2-doc",
-        "out": "/nix/store/ln3rnyn8yklr8j21a9i6s0s501lhdii6-git-2.45.2"
+        "debug": "/nix/store/s0a07h6m6lpcv67954y3vag35np716sf-git-2.48.1-debug",
+        "doc": "/nix/store/fkrfnnwc7a7rq86rrnb9j2474wy8qkbm-git-2.48.1-doc",
+        "out": "/nix/store/pl9krbxnhawd4n5kxsm6m5i5mjhbw48q-git-2.48.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -188,29 +186,28 @@
     {
       "attr_path": "neovim",
       "broken": false,
-      "derivation": "/nix/store/2agjkmgxjh7js5khd2k3c6rirbxks7ab-neovim-0.10.0.drv",
+      "derivation": "/nix/store/k39zphwyd8vb8sg2kbk9arhx3qzpk0qp-neovim-0.10.4.drv",
       "description": "Vim text editor fork focused on extensibility and agility",
       "install_id": "neovim",
       "license": "[ Apache-2.0, Vim ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "neovim-0.10.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "neovim-0.10.4",
       "pname": "neovim",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "0.10.0",
+      "version": "0.10.4",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/xsqpns8p3czs19dcsl7iri48lqz2mlg9-neovim-0.10.0"
+        "out": "/nix/store/8vdi89xqqw3fkw21h1kcbfzk6lr87mwk-neovim-0.10.4"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -219,30 +216,29 @@
     {
       "attr_path": "nodejs_20",
       "broken": false,
-      "derivation": "/nix/store/7hyc9v44b6gidfxgj1lip9h1338w6skb-nodejs-20.14.0.drv",
+      "derivation": "/nix/store/irlh1mwxg641rsjp4j99vp868rs89jsz-nodejs-20.18.3.drv",
       "description": "Event-driven I/O framework for the V8 JavaScript engine",
       "install_id": "nodejs_20",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "nodejs-20.14.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "nodejs-20.18.3",
       "pname": "nodejs_20",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "nodejs-20.14.0",
+      "version": "20.18.3",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "libv8": "/nix/store/2qaf68dzimr8as4bgli0xmsn11c0ah2j-nodejs-20.14.0-libv8",
-        "out": "/nix/store/ilkfhnqz4xczrliqjva8770x2svbfznd-nodejs-20.14.0"
+        "libv8": "/nix/store/8kx6sh17pk01hklv5k44lgp21r2zwk04-nodejs-20.18.3-libv8",
+        "out": "/nix/store/sw8mgfgy28h0jrbf8icbvr6w8wfr77np-nodejs-20.18.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -251,29 +247,28 @@
     {
       "attr_path": "ripgrep",
       "broken": false,
-      "derivation": "/nix/store/ji0hg0i7xq671fpwrkqhfinz1hlzg3hh-ripgrep-14.1.0.drv",
+      "derivation": "/nix/store/gkjbmgwvxiz0cdq3lm2r9127pbqhkb1s-ripgrep-14.1.1.drv",
       "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
       "install_id": "ripgrep",
       "license": "[ Unlicense, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "ripgrep-14.1.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "ripgrep-14.1.1",
       "pname": "ripgrep",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "14.1.0",
+      "version": "14.1.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/fnfmwb3s676q4hz9izxp1x1mpby2z75x-ripgrep-14.1.0"
+        "out": "/nix/store/3mlj8k3yn1nmc6qa0snnqmjxqvfd467n-ripgrep-14.1.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -282,29 +277,28 @@
     {
       "attr_path": "tig",
       "broken": false,
-      "derivation": "/nix/store/rlqkx7mqw2z7x4z8b4082wxgq23zy0h9-tig-2.5.10.drv",
+      "derivation": "/nix/store/6axpmw0360mkczxgx446qf4x3wfnh8zq-tig-2.5.12.drv",
       "description": "Text-mode interface for git",
       "install_id": "tig",
       "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "tig-2.5.10",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "tig-2.5.12",
       "pname": "tig",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "2.5.10",
+      "version": "2.5.12",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/x0wycgq67x5cdicassk2lhcrnlk3fzgr-tig-2.5.10"
+        "out": "/nix/store/wcam0vsl765q09x7n90aawrwdhlsaqkj-tig-2.5.12"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -313,31 +307,30 @@
     {
       "attr_path": "tmux",
       "broken": false,
-      "derivation": "/nix/store/yd3lnkfb0nyqxm1sff886jyyy4i00vj6-tmux-3.4.drv",
+      "derivation": "/nix/store/jn4ndlkw4bb80a1932yg0zjcc0ipff38-tmux-3.5a.drv",
       "description": "Terminal multiplexer",
       "install_id": "tmux",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "tmux-3.4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "tmux-3.5a",
       "pname": "tmux",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "3.4",
+      "version": "3.5a",
       "outputs_to_install": [
-        "out",
-        "man"
+        "man",
+        "out"
       ],
       "outputs": {
-        "man": "/nix/store/y5794m0jafpl5hhk2d5mnhwgxb8940wg-tmux-3.4-man",
-        "out": "/nix/store/mggcawid56wrx269q9kzgvwwjd46zaar-tmux-3.4"
+        "man": "/nix/store/z2i1jhzyym14pfxdrqphk4rhcm2hkkgh-tmux-3.5a-man",
+        "out": "/nix/store/5hkddai9wcf44qf3v9ic6bdx66kmqx7g-tmux-3.5a"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -346,29 +339,28 @@
     {
       "attr_path": "which",
       "broken": false,
-      "derivation": "/nix/store/nbi5cjc75lck27gsm74z9wrsshy8dhkz-which-2.21.drv",
+      "derivation": "/nix/store/6pvh7y35hvr109bdi8k9alnk57qsj3zh-which-2.23.drv",
       "description": "Shows the full path of (shell) commands",
       "install_id": "which",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "name": "which-2.21",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "name": "which-2.23",
       "pname": "which",
-      "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-      "rev_count": 656713,
-      "rev_date": "2024-07-23T13:58:26Z",
-      "scrape_date": "2024-07-26T01:12:46Z",
+      "rev": "6607cf789e541e7873d40d3a8f7815ea92204f32",
+      "rev_count": 767267,
+      "rev_date": "2025-03-13T07:39:42Z",
+      "scrape_date": "2025-03-14T00:31:05Z",
       "stabilities": [
-        "stable",
         "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "2.21",
+      "version": "2.23",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/6rwmygda5wq13ryd1aslyyzb0zz4rrd2-which-2.21"
+        "out": "/nix/store/k3pawiavw5rhp9ncj7lpxcgz9lawv51r-which-2.23"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -377,28 +369,29 @@
     {
       "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/r32ga1dwq6x6l4fckkfil4aqq6wzyir4-uv-0.4.30.drv",
+      "derivation": "/nix/store/j12s854dp9gz5symcq90ryb55752a5y6-uv-0.6.0.drv",
       "description": "Extremely fast Python package installer and resolver, written in Rust",
       "install_id": "uv",
       "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4633a7c72337ea8fd23a4f2ba3972865e3ec685d",
-      "name": "uv-0.4.30",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "name": "uv-0.6.0",
       "pname": "uv",
-      "rev": "4633a7c72337ea8fd23a4f2ba3972865e3ec685d",
-      "rev_count": 712559,
-      "rev_date": "2024-11-25T07:53:41Z",
-      "scrape_date": "2024-11-27T03:52:37Z",
+      "rev": "73cf49b8ad837ade2de76f87eb53fc85ed5d4680",
+      "rev_count": 755230,
+      "rev_date": "2025-02-18T08:17:47Z",
+      "scrape_date": "2025-02-20T02:25:42Z",
       "stabilities": [
+        "stable",
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "0.4.30",
+      "version": "0.6.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/ys3ydh0p7ir68m81v3yqyh4aqjpyk1rb-uv-0.4.30-dist",
-        "out": "/nix/store/plgmjfks0wb6v307dixvvcq5w4vldjzz-uv-0.4.30"
+        "out": "/nix/store/jss0dgj7sgq49rgqhz2f8a1l58dam6dr-uv-0.6.0"
       },
       "system": "x86_64-linux",
       "group": "uv",
