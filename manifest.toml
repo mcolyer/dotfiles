@@ -6,16 +6,24 @@ tmux.pkg-path = "tmux"
 curl.pkg-path = "curl"
 direnv.pkg-path = "direnv"
 which.pkg-path = "which"
-nodejs_20.pkg-path = "nodejs_20"
+nodejs_22.pkg-path = "nodejs_22"
 ripgrep.pkg-path = "ripgrep"
 neovim.pkg-path = "neovim"
 neovim.version = "0.10.4"
+
 aider-chat.pkg-path = "aider-chat"
 aider-chat.version = "0.74.1"
 aider-chat.pkg-group = "aider-chat"
+
 uv.pkg-path = "uv"
 uv.version = "0.6.0"
 uv.pkg-group = "uv"
+
+claude-code.pkg-path = "claude-code"
+claude-code.pkg-group = "claude-code"
+
+codex.pkg-path = "codex"
+codex.pkg-group = "codex"
 
 [options]
 systems = ["x86_64-linux"]
