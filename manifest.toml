@@ -24,6 +24,7 @@ claude-code.pkg-group = "claude-code"
 
 codex.pkg-path = "codex"
 codex.pkg-group = "codex"
+gh.pkg-path = "gh"
 
 [options]
 systems = ["x86_64-linux"]
