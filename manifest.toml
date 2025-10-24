@@ -23,9 +23,11 @@ claude-code.pkg-path = "claude-code"
 claude-code.pkg-group = "claude-code"
 
 codex.pkg-path = "codex"
+codex.version = "0.47.0"
 codex.pkg-group = "codex"
 gh.pkg-path = "gh"
 jq.pkg-path = "jq"
+ast-grep.pkg-path = "ast-grep"
 
 [options]
 systems = ["x86_64-linux"]
